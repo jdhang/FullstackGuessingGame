@@ -1,0 +1,62 @@
+html {
+  background-color: #222;
+}
+
+.app {
+  background-color: #222;
+}
+
+.container {
+  margin-top: 50px;
+  background-color: #fff;
+  min-height: 700px;
+}
+
+/* notification/title styling */
+.title {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.status {
+  margin: 12px 0;
+}
+
+.notification-area {
+  visibility: visible;
+}
+
+/* button styling */
+.btn {
+  border-radius: 0px;
+}
+
+.btn-group-row {
+  margin-top: 5px;
+}
+
+/* text input styling */
+.guess-box {
+  font-size: 32px;
+  height: 100%;
+}
+
+/* answer status styling */
+.incorrect {
+  color: #d9534f;
+}
+
+.correct {
+  color: #5cb85c;
+}
+
+/* guess table styling  */
+.guess-table {
+  font-size: 125%;
+}
+
+.table td, .table th {
+  text-align: center;
+}
