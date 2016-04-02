@@ -20,62 +20,72 @@
               <h2>Guess a Number between 1 and 100</h2>
             </div>
             <div class="notification-area">
-              <h1 class="correct">Correct!</h1>
+              <h1>.</h1>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-8 text-center">
-            <form>
+            <form id="guess-form">
               <div class="col-md-offset-1 col-md-10">
                 <div class="form-group">
-                  <input type="text" class="form-control guess-box text-center"
-                  placeholder="Enter Number Here" value="25"></input>
+                  <input type="text" id="guess" class="form-control guess-box text-center"
+                  placeholder="Enter Number Here"></input>
                 </div>
               </div>
               <div class="col-md-12">
-                <button type="button" class="btn btn-primary btn-lg">Check my Guess</button>
+                <button type="button" id="submit" class="btn btn-primary btn-lg"
+                  >Check my Guess</button>
               </div>
               <div class="col-md-12 btn-group-row">
                 <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-success btn-lg">Play again!</button>
-                  <button type="button" class="btn btn-danger btn-lg">What's the
-                  Number?!</button>
+                  <button type="button" id="playAgain" class="btn btn-success btn-lg">Play again!</button>
+                  <button type="button" id="hint" class="btn btn-danger
+                  btn-lg">I Need a Hint!</button>
                 </div>
               </div>
             </form>
+            <div class="col-md-12">
+              <div class="hint-area"></div>
+            </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <table class="guess-table table table-bordered table-condensed">
               <tr>
                 <th>Try</th>
                 <th>Guess</th>
-                <th>Correct?</th>
+                <th>than Winning #</th>
+                <th>Within</th>
               </tr>
               <tr>
                 <td>1</td>
-                <td>1</td>
-                <td><i class="fa fa-times incorrect"></i></td>
+                <td id="1_guess">-</td>
+                <td id="1_dir">-</td>
+                <td id="1_dist">-</td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>5</td>
-                <td><i class="fa fa-times incorrect"></i></td>
+                <td id="2_guess">-</td>
+                <td id="2_dir">-</td>
+                <td id="2_dist">-</td>
               </tr>
               <tr>
                 <td>3</td>
-                <td>25</td>
-                <td><i class="fa fa-check correct"></i></td>
+                <td id="3_guess">-</td>
+                <td id="3_dir">-</td>
+                <td id="3_dist">-</td>
               </tr>
               <tr>
                 <td>4</td>
-                <td>-</td>
-                <td>-</td>
+                <td id="4_guess">-</td>
+                <td id="4_dir">-</td>
+                <td id="4_dist">-</td>
               </tr>
               <tr>
                 <td>5</td>
-                <td>-</td>
-                <td>-</td>
+                <td id="5_guess">-</td>
+                <td id="5_dir">-</td>
+                <td id="5_dist">-</td>
               </tr>
             </table>
           </div>
@@ -86,5 +96,5 @@
   </body>
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="bundle.js"</script>
+  <script src="guessingGame.js"></script>
 </html>

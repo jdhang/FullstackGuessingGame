@@ -25,7 +25,12 @@ html {
 }
 
 .notification-area {
-  visibility: visible;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+.hint-area {
+  margin-bottom: 20px;
 }
 
 /* button styling */
@@ -50,6 +55,10 @@ html {
 
 .correct {
   color: #5cb85c;
+}
+
+.no-color {
+  color: black;
 }
 
 /* guess table styling  */
